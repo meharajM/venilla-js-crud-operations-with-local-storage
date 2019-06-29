@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            Twitter
+        </title>
+        <!-- <link rel="stylesheet" href="css/styles.css"> -->
+
+    </head>
+    <body>
+        <div class="app-container">
+            <div class="tweet-container">
+                <textarea maxlength="160" placeholder="What do u have in mind...?" id="tweet-text"></textarea>
+                <button id="save-tweet">Post</button>
+            </div>
+            <div class="tweet-list-container">
+                
+            </div>
+
+        </div>
+        <div class="templates" style="display: none">
+            <div id="tweet-template"> 
+                <div>{{text}}</div>
+                <div>{{time}}</div>
+                <div class="options"> <button id={{id}} class="edit" >Edit</button>
+                    <button id={{id}} class="delete" >Delete</button>
+                </div>
+            </div>
+        </div>
+    <script src="js/index.js"></script>
+
+    </body>
+
+</html>
